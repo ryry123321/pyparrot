@@ -288,7 +288,7 @@ class MamboGroundcam:
         self.ftp.cwd(self.MEDIA_PATH)
         try:
             self.ftp.retrbinary('RETR ' + filename, open(self.storageFile, "wb").write) #download
-            if cv2_flag and OpenCVAvailable:
+            if cv2_flag and openCVAvailable:
                 img = cv2.imread(self.storageFile)
                 return img
             else:

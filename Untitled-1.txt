@@ -1,0 +1,5 @@
+task
+browser-sync
+build
+buildAll
+buildTests

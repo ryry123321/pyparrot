@@ -3,7 +3,7 @@ DroneVision is separated from the main Mambo/Bebop class to enable the use of th
 If you want to do vision processing, you will need to create a DroneVision object to capture the
 video stream.
 
-Note that this module relies on the opencv module and the ffmpeg program
+Note that this module relies on the opencv-python module and the ffmpeg program
 
 Ffmpeg write the images out to the images directory and then they are read in from the user thread.  The DroneVisionGUI
 does not save copies of the images and instead shows you the images on the screen (they are saved to memory only).
@@ -13,7 +13,7 @@ to use libvlc and DroneVisionGUI.
 
 Author: Amy McGovern, dramymcgovern@gmail.com
 """
-import cv2
+import opencv2
 import threading
 import time
 import subprocess
@@ -84,6 +84,7 @@ class DroneVision:
 
         :return True if the vision opened correctly and False otherwise
         """
+
 
         # start the stream on the bebop
         if (self.is_bebop):

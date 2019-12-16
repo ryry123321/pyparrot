@@ -1,0 +1,2 @@
+install_cv2
+pip.install

@@ -14,7 +14,7 @@ Author: Amy McGovern, dramymcgovern@gmail.com
 Some of the LIBVLC code comes from
 Author: Valentin Benke, valentin.benke@aon.at
 """
-import cv2
+import opencv2-python
 import time
 from functools import partial
 from os.path import join

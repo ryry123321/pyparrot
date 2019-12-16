@@ -11,7 +11,7 @@ import time
 
 
 # set this to true if you want to fly for the demo
-testFlying = False
+testFlying = True
 
 class UserVision:
     def __init__(self, vision):
@@ -32,7 +32,7 @@ class UserVision:
 
 
 # you will need to change this to the address of YOUR mambo
-mamboAddr = "e0:14:d0:63:3d:d0"
+mamboAddr = "fe80::a5b2:6fea:a148:4e25%14"
 
 # make my mambo object
 # remember to set True/False for the wifi depending on if you are using the wifi or the BLE to connect
